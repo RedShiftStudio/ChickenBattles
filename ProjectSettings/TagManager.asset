@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - PlayerCollider
+  - DeadPlayer
+  - Pickup
+  - PlayerWheel
+  - Enemy
+  - Bullet
+  - DynamicLand
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - Ground
+  - PlayerBounds
+  - PlayerDetector
+  - EnemyPlayerDetector
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Hills
+    uniqueID: 4204821253
+    locked: 0
+  - name: Trees
+    uniqueID: 3248798031
+    locked: 0
+  - name: Characters
+    uniqueID: 3614652153
+    locked: 0
+  - name: Player characters
+    uniqueID: 1615167031
+    locked: 0
+  - name: Explosions
+    uniqueID: 4107094139
+    locked: 0
+  - name: Land
+    uniqueID: 3217009843
+    locked: 0
+  - name: UI
+    uniqueID: 1306350091
+    locked: 0
