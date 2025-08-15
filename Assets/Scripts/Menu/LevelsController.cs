@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using YG;
 
 //--a singleton for remembering stuff about levels
 
@@ -72,7 +74,33 @@ public class LevelsController : MonoBehaviour {
 	void Update () {
 		//--go to menu on escape
 		if(Input.GetKeyDown(KeyCode.Escape) == true) {
-			LoadMenu();
+
+            AudioSource[] sources = FindObjectsOfType<AudioSource>();
+
+            Disable(sources);
+
+            YandexGame.FullscreenShow();
+
+            Enable(sources);
+
+            LoadMenu();
 		}
 	}
+
+
+    void Enable(AudioSource[] sources)
+    {
+        sources.ToList().ForEach(source =>
+        {
+            source.volume = 1;
+        });
+    }
+
+    void Disable(AudioSource[] sources)
+    {
+        sources.ToList().ForEach(source =>
+        {
+            source.volume = 0;
+        });
+    }
 }

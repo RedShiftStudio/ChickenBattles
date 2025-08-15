@@ -23,7 +23,7 @@ public class PlayerSelectScript : MonoBehaviour {
 	public GameObject P2WaitMsg;
 	public GameObject UnlockP1Btn;
 	public GameObject UnlockP2Btn;
-	public GameObject UnlockModal;
+	//public GameObject UnlockModal;
 	public UnlockCharacterButton UnlockP1BtnScript;
 	public UnlockCharacterButton UnlockP2BtnScript;
 
@@ -54,8 +54,10 @@ public class PlayerSelectScript : MonoBehaviour {
 		P1WaitMsg.SetActive(false);
 		P2WaitMsg.SetActive(false);
 
+		isRocketUnlocked = true;
+
 		//--check whether cogbot has been unlocked 
-		isRocketUnlocked = Convert.ToBoolean(PlayerPrefs.GetInt("UnlockedRocket"));
+		//isRocketUnlocked = Convert.ToBoolean(PlayerPrefs.GetInt("UnlockedRocket"));
 		// isSolarUnlocked = Convert.ToBoolean(PlayerPrefs.GetInt("UnlockedSolar"));
 		// isRazorbackUnlocked = Convert.ToBoolean(PlayerPrefs.GetInt("UnlockedRazorback"));
 		// isPooperUnlocked = Convert.ToBoolean(PlayerPrefs.GetInt("UnlockedPooper"));
@@ -315,11 +317,11 @@ public class PlayerSelectScript : MonoBehaviour {
 		//--unlock the currently selected character
 		Debug.Log("Showing modal for "+selectedCharacterName);
 		UnlockingCharacter = selectedCharacterName;
-		UnlockModal.SetActive(true);
+		//UnlockModal.SetActive(true);
 	}
 
 	public void closeUnlockModal(){
-		UnlockModal.SetActive(false);
+		//UnlockModal.SetActive(false);
 	}
 
 
