@@ -265,6 +265,65 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f11bdac4211b64a659b01526174dedc0, type: 3}
+--- !u!1 &152300580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 152300582}
+  - component: {fileID: 152300581}
+  m_Layer: 0
+  m_Name: ShopManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &152300581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152300580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea1a68ab632a3043a24e4a10a99cd69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectsPlanes1:
+  - {fileID: 4964247381544757998}
+  - {fileID: 2420385969958488862}
+  - {fileID: 6779620765345881006}
+  - {fileID: 1564467642215883821}
+  gameObjectsplanes2:
+  - {fileID: 1404970060298083449}
+  - {fileID: 4947552043960371420}
+  - {fileID: 5082871455911023077}
+  - {fileID: 4900272886993850703}
+  costAdPl1: 00000000020000000400000008000000
+  costAdPl2: 00000000020000000400000008000000
+  WatchAdButton:
+  - {fileID: 2117751728}
+  - {fileID: 718081425}
+--- !u!4 &152300582
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152300580}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 490.00244, y: 187.40784, z: -3.0955768}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &155419562
 GameObject:
   m_ObjectHideFlags: 0
@@ -1798,46 +1857,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 718081428}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Play
+      - m_Target: {fileID: 152300581}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
+        m_MethodName: WatchRewVideo2
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 718081426}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: PressedUnlockButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1640011095}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1359291244}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4331,46 +4354,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2117751731}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Play
+      - m_Target: {fileID: 152300581}
+        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
+        m_MethodName: WatchRewVideo
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2117751729}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: PressedUnlockButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1640011095}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1359291244}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10264,6 +10251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1404970060298083332}
+  - component: {fileID: 1404970060298083449}
   m_Layer: 8
   m_Name: P2 fokker
   m_TagString: Player
@@ -10271,6 +10259,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1404970060298083449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404970060298083448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b316c285ddc70b54a949dde82de5251a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  times: 0
+  isBought: 1
 --- !u!114 &1564467642215883796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10408,6 +10410,7 @@ GameObject:
   - component: {fileID: 1564467642215883816}
   - component: {fileID: 1564467642215883817}
   - component: {fileID: 1564467642215883796}
+  - component: {fileID: 1564467642215883821}
   m_Layer: 8
   m_Name: P1Rocket
   m_TagString: Player
@@ -10415,6 +10418,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1564467642215883821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564467642215883820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b316c285ddc70b54a949dde82de5251a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  times: 0
+  isBought: 0
 --- !u!4 &1564467642568965730
 Transform:
   m_ObjectHideFlags: 0
@@ -11283,6 +11300,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2420385969958488857}
+  - component: {fileID: 2420385969958488862}
   m_Layer: 8
   m_Name: P1 vickers
   m_TagString: Player
@@ -11290,6 +11308,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &2420385969958488862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2420385969958488861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b316c285ddc70b54a949dde82de5251a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  times: 0
+  isBought: 0
 --- !u!212 &2420385970548852472
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17854,6 +17886,7 @@ GameObject:
   - component: {fileID: 4900272886993850673}
   - component: {fileID: 4900272886993850677}
   - component: {fileID: 4900272886993850702}
+  - component: {fileID: 4900272886993850703}
   m_Layer: 8
   m_Name: P2Rocket
   m_TagString: Player
@@ -17874,6 +17907,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EngineSfx: {fileID: 4900272886993850677}
+--- !u!114 &4900272886993850703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4900272886993850701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b316c285ddc70b54a949dde82de5251a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  times: 0
+  isBought: 0
 --- !u!4 &4944896530336893046
 Transform:
   m_ObjectHideFlags: 0
@@ -18088,6 +18135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4947552043960371419}
+  - component: {fileID: 4947552043960371420}
   m_Layer: 8
   m_Name: P2 vickers
   m_TagString: Player
@@ -18112,6 +18160,20 @@ Transform:
   - {fileID: 4947552044223472119}
   m_Father: {fileID: 1895273178}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4947552043960371420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4947552043960371367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b316c285ddc70b54a949dde82de5251a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  times: 0
+  isBought: 0
 --- !u!1 &4947552044223472112
 GameObject:
   m_ObjectHideFlags: 0
@@ -18284,6 +18346,7 @@ GameObject:
   - component: {fileID: 4964247381544757993}
   - component: {fileID: 4964247381544757992}
   - component: {fileID: 4964247381544757973}
+  - component: {fileID: 4964247381544757998}
   m_Layer: 8
   m_Name: P1 fokker
   m_TagString: Player
@@ -18291,6 +18354,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4964247381544757998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4964247381544757997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b316c285ddc70b54a949dde82de5251a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  times: 0
+  isBought: 1
 --- !u!1 &4964247381695627272
 GameObject:
   m_ObjectHideFlags: 0
@@ -19106,6 +19183,7 @@ GameObject:
   - component: {fileID: 5082871455911023076}
   - component: {fileID: 5082871455911023072}
   - component: {fileID: 5082871455911023003}
+  - component: {fileID: 5082871455911023077}
   m_Layer: 8
   m_Name: P2Tigermoth
   m_TagString: Player
@@ -19240,6 +19318,20 @@ Transform:
   - {fileID: 6101258381629392863}
   m_Father: {fileID: 1895273178}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5082871455911023077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5082871455911023000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b316c285ddc70b54a949dde82de5251a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  times: 0
+  isBought: 0
 --- !u!1 &5082871456022858266
 GameObject:
   m_ObjectHideFlags: 0
@@ -20265,6 +20357,7 @@ GameObject:
   - component: {fileID: 6779620765345880977}
   - component: {fileID: 6779620765345880976}
   - component: {fileID: 6779620765345881005}
+  - component: {fileID: 6779620765345881006}
   m_Layer: 8
   m_Name: P1Tigermoth
   m_TagString: Player
@@ -20285,6 +20378,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EngineSfx: {fileID: 6779620765345880976}
+--- !u!114 &6779620765345881006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6779620765345880981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b316c285ddc70b54a949dde82de5251a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  times: 0
+  isBought: 0
 --- !u!212 &6779620765929952880
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21529,3 +21636,4 @@ SceneRoots:
   - {fileID: 50405158}
   - {fileID: 112065823}
   - {fileID: 781423976}
+  - {fileID: 152300582}
