@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using YG;
 
 public class ShopManager : MonoBehaviour
@@ -20,8 +21,18 @@ public class ShopManager : MonoBehaviour
 
     [SerializeField] int[] costAdPl2;
 
+    string[] costStringAdpl1;
+
+    string[] costStringAdpl2;
+
     [SerializeField] GameObject[] WatchAdButton;
 
+    [SerializeField] Text curCostAd1;
+    [SerializeField] Text curCostAd2;
+
+    int currentIndex1;
+    int currentIndex2;
+ 
     private void Awake()
     {
         //DontDestroyOnLoad(this);s
@@ -33,6 +44,14 @@ public class ShopManager : MonoBehaviour
         pl1Times = YandexGame.savesData.pl1Times;
 
         pl2Times = YandexGame.savesData.pl2Times;
+
+        costStringAdpl1 = costAdPl1.ToList().Select(x => x.ToString()).ToArray();
+
+        costStringAdpl2 = costAdPl2.ToList().Select(x => x.ToString()).ToArray();
+
+        costStringAdpl1[0] = "";
+
+        costStringAdpl2[0] = "";
 
         CheckForLocalAfterRestart();
     }
@@ -86,6 +105,8 @@ public class ShopManager : MonoBehaviour
         YandexGame.SaveLocal();
 
         CheckForAvailiableSkin();
+
+        ShowCur();
     }
 
     public void WatchRewVideo2()
@@ -99,6 +120,8 @@ public class ShopManager : MonoBehaviour
         YandexGame.SaveLocal();
 
         CheckForAvailiableSkin();
+
+        ShowCur2();
     }
 
     public void ShowWatchAdButton()
@@ -125,6 +148,7 @@ public class ShopManager : MonoBehaviour
     {
         Debug.Log(pl1Times);
         Debug.Log(pl2Times);
+
 
 
         for (int i = 0; i < costAdPl1.Length; i++)
@@ -190,5 +214,37 @@ public class ShopManager : MonoBehaviour
         });
     }
 
+    public void ShowNext()
+    {
+        currentIndex1 = (currentIndex1 + 1) % costStringAdpl1.Length;
+        curCostAd1.text = pl1Times + "/" + costStringAdpl1[currentIndex1].ToString();
+    }
 
+    public void ShowPrevious()
+    {
+        currentIndex1 = (currentIndex1 - 1 + costStringAdpl1.Length) % costStringAdpl1.Length;
+        curCostAd1.text = pl1Times + "/" + costStringAdpl1[currentIndex1].ToString();
+    }
+
+    public void ShowCur()
+    {
+        curCostAd1.text = pl1Times + "/" + costStringAdpl1[currentIndex1].ToString();
+    }
+
+    public void ShowCur2()
+    {
+        curCostAd2.text = pl2Times + "/" + costStringAdpl2[currentIndex2].ToString();
+    }
+
+    public void ShowNext2()
+    {
+        currentIndex2 = (currentIndex2 + 1) % costStringAdpl2.Length;
+        curCostAd2.text = pl2Times + "/" + costStringAdpl2[currentIndex2].ToString();
+    }
+
+    public void ShowPrevious2()
+    {
+        currentIndex2 = (currentIndex2 - 1 + costStringAdpl2.Length) % costStringAdpl2.Length;
+        curCostAd2.text = pl2Times + "/" + costStringAdpl2[currentIndex2].ToString();
+    }
 }
